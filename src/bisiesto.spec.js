@@ -17,4 +17,10 @@ describe("AnioBisiesto", () => {
     it("Deberia dar falso para años no bisiestos. Caso anio 2100", () => {
         expect(esBisiesto(2100)).toEqual(false);
     });
+    it("Deberia dar verdadero para años bisiestos. Caso anio 2008", () => {
+        expect(esBisiesto(2008)).toEqual(true);
+    });
+    it("Deberia dar verdadero para años bisiestos. Caso anio 2016", () => {
+        expect(esBisiesto(2016)).toEqual(true);
+    });
 });
