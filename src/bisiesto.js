@@ -8,7 +8,9 @@ function esBisiesto(anio) {
     else if (anio % 4 === 0 && anio % 100 != 0) {
         return true;
     }
-    return false;
+    else if (anio % 4 != 0) {
+        return false;
+    }
 }
 
 export default esBisiesto;
